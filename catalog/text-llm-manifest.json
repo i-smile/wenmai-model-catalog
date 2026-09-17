@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "catalog": "text-llm",
+  "manifestVersion": "2026-09-17.1",
+  "providers": {
+    "openrouter": {
+      "label": "OpenRouter",
+      "strategy": "curated",
+      "models": [
+        { "id": "anthropic/claude-fable-5", "role": "旗舰", "defaultVisible": true },
+        { "id": "anthropic/claude-fable-5.1", "role": "旗舰", "defaultVisible": true },
+        { "id": "anthropic/claude-opus-5", "role": "旗舰", "defaultVisible": true },
+        { "id": "anthropic/claude-sonnet-5", "role": "日常", "defaultVisible": true },
+        { "id": "openai/gpt-5.6-sol", "role": "推理", "defaultVisible": true },
+        { "id": "openai/gpt-5.6-terra", "role": "日常", "defaultVisible": true },
+        { "id": "openai/gpt-5.6-luna", "role": "快速", "defaultVisible": true },
+        { "id": "openai/gpt-6-astra", "role": "旗舰", "defaultVisible": true },
+        { "id": "openai/gpt-6-astra-pro", "role": "旗舰" },
+        { "id": "google/gemini-3.1-pro-preview", "role": "旗舰", "defaultVisible": true },
+        { "id": "google/gemini-3.8-flash", "role": "快速", "defaultVisible": true },
+        { "id": "google/gemini-3.7-flash", "role": "快速", "defaultVisible": true },
+        { "id": "x-ai/grok-4.6", "role": "推理" },
+        { "id": "deepseek/deepseek-v4-pro", "role": "编程", "defaultVisible": true },
+        { "id": "deepseek/deepseek-v4-flash", "role": "快速" },
+        { "id": "deepseek/deepseek-v4.1-flash", "role": "快速", "defaultVisible": true },
+        { "id": "qwen/qwen3.8-max-0902", "role": "推理" },
+        { "id": "moonshotai/kimi-k3", "role": "长文本" },
+        { "id": "minimax/minimax-m3", "role": "日常" },
+        { "id": "z-ai/glm-5.2", "role": "中文" },
+        { "id": "xiaomi/mimo-v2.5-pro", "role": "推理" },
+        { "id": "tencent/hy3", "role": "中文" },
+        { "id": "stepfun/step-3.7-flash", "role": "快速" },
+        { "id": "nvidia/nemotron-3-super-120b-a12b", "role": "开源" },
+        { "id": "openrouter/pareto-code", "role": "自动路由" }
+      ]
+    },
+    "deepseek": {
+      "label": "DeepSeek",
+      "strategy": "curated",
+      "models": [
+        { "id": "deepseek-v4-pro", "role": "旗舰", "defaultVisible": true },
+        { "id": "deepseek-v4-flash", "role": "快速", "defaultVisible": true },
+        { "id": "deepseek-flash", "role": "快速", "defaultVisible": true },
+        { "id": "deepseek-v4-flash-vision-exp", "role": "视觉", "defaultVisible": true }
+      ]
+    },
+    "openai": {
+      "label": "OpenAI",
+      "strategy": "curated",
+      "models": [
+        { "id": "gpt-5.6-sol", "role": "旗舰", "defaultVisible": true },
+        { "id": "gpt-5.6-terra", "role": "日常", "defaultVisible": true },
+        { "id": "gpt-5.6-luna", "role": "快速", "defaultVisible": true },
+        { "id": "gpt-6-astra", "role": "旗舰", "defaultVisible": true }
+      ]
+    },
+    "anthropic": {
+      "label": "Anthropic",
+      "strategy": "curated",
+      "models": [
+        { "id": "claude-fable-5", "role": "旗舰", "defaultVisible": true },
+        { "id": "claude-fable-5-1", "role": "旗舰", "defaultVisible": true },
+        { "id": "claude-opus-5", "role": "旗舰" },
+        { "id": "claude-sonnet-5", "role": "日常", "defaultVisible": true },
+        { "id": "claude-haiku-4-5", "role": "快速", "defaultVisible": true }
+      ]
+    },
+    "google": {
+      "label": "Google Gemini",
+      "strategy": "curated",
+      "models": [
+        { "id": "gemini-3.1-pro-preview", "role": "旗舰", "defaultVisible": true },
+        { "id": "gemini-3.7-flash", "role": "快速", "defaultVisible": true },
+        { "id": "gemini-3.8-flash", "role": "快速", "defaultVisible": true }
+      ]
+    },
+    "kimi": {
+      "label": "Kimi API",
+      "strategy": "curated",
+      "models": [
+        { "id": "kimi-k3", "role": "旗舰", "defaultVisible": true },
+        { "id": "kimi-k2.6", "role": "快速", "defaultVisible": true }
+      ]
+    },
+    "zhipu": {
+      "label": "智谱 AI",
+      "strategy": "curated",
+      "models": [
+        { "id": "glm-5.3", "role": "旗舰", "defaultVisible": true },
+        { "id": "glm-5.3-flash", "role": "快速", "defaultVisible": true },
+        { "id": "glm-5.2", "role": "日常", "defaultVisible": true }
+      ]
+    },
+    "minimax": {
+      "label": "MiniMax",
+      "strategy": "curated",
+      "models": [
+        { "id": "MiniMax-M3", "role": "旗舰", "defaultVisible": true }
+      ]
+    }
+  }
+}
