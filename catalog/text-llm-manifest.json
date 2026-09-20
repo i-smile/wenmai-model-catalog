@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "catalog": "text-llm",
-  "manifestVersion": "2026-09-17.1",
+  "manifestVersion": "2026-09-20.1",
   "providers": {
     "openrouter": {
       "label": "OpenRouter",
@@ -38,10 +38,10 @@
       "label": "DeepSeek",
       "strategy": "curated",
       "models": [
-        { "id": "deepseek-v4-pro", "role": "旗舰", "defaultVisible": true },
-        { "id": "deepseek-v4-flash", "role": "快速", "defaultVisible": true },
-        { "id": "deepseek-flash", "role": "快速", "defaultVisible": true },
-        { "id": "deepseek-v4-flash-vision-exp", "role": "视觉", "defaultVisible": true }
+        { "id": "deepseek-v4-pro", "role": "旗舰", "defaultVisible": true, "reasoningOff": "thinking_disabled" },
+        { "id": "deepseek-v4-flash", "role": "快速", "defaultVisible": true, "reasoningOff": "thinking_disabled" },
+        { "id": "deepseek-flash", "role": "快速", "defaultVisible": true, "reasoningOff": "none" },
+        { "id": "deepseek-v4-flash-vision-exp", "role": "视觉", "defaultVisible": true, "reasoningOff": "thinking_disabled" }
       ]
     },
     "openai": {
@@ -78,17 +78,17 @@
       "label": "Kimi API",
       "strategy": "curated",
       "models": [
-        { "id": "kimi-k3", "role": "旗舰", "defaultVisible": true },
-        { "id": "kimi-k2.6", "role": "快速", "defaultVisible": true }
+        { "id": "kimi-k3", "role": "旗舰", "defaultVisible": true, "reasoningOff": "thinking_disabled" },
+        { "id": "kimi-k2.6", "role": "快速", "defaultVisible": true, "reasoningOff": "thinking_disabled" }
       ]
     },
     "zhipu": {
       "label": "智谱 AI",
       "strategy": "curated",
       "models": [
-        { "id": "glm-5.3", "role": "旗舰", "defaultVisible": true },
-        { "id": "glm-5.3-flash", "role": "快速", "defaultVisible": true },
-        { "id": "glm-5.2", "role": "日常", "defaultVisible": true }
+        { "id": "glm-5.3", "role": "旗舰", "defaultVisible": true, "reasoningOff": "thinking_disabled" },
+        { "id": "glm-5.3-flash", "role": "快速", "defaultVisible": true, "reasoningOff": "thinking_disabled" },
+        { "id": "glm-5.2", "role": "日常", "defaultVisible": true, "reasoningOff": "thinking_disabled" }
       ]
     },
     "minimax": {
