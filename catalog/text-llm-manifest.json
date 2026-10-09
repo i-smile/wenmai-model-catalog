@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "catalog": "text-llm",
-  "manifestVersion": "2026-09-20.1",
+  "manifestVersion": "2026-10-09.1",
   "providers": {
     "openrouter": {
       "label": "OpenRouter",
@@ -10,12 +10,21 @@
         { "id": "anthropic/claude-fable-5", "role": "旗舰", "defaultVisible": true },
         { "id": "anthropic/claude-fable-5.1", "role": "旗舰", "defaultVisible": true },
         { "id": "anthropic/claude-opus-5", "role": "旗舰", "defaultVisible": true },
+        { "id": "anthropic/claude-opus-5.5", "role": "旗舰", "defaultVisible": true },
         { "id": "anthropic/claude-sonnet-5", "role": "日常", "defaultVisible": true },
+        { "id": "anthropic/claude-sonnet-5.5", "role": "日常", "defaultVisible": true },
+        { "id": "anthropic/claude-haiku-5.5", "role": "快速", "defaultVisible": true },
         { "id": "openai/gpt-5.6-sol", "role": "推理", "defaultVisible": true },
         { "id": "openai/gpt-5.6-terra", "role": "日常", "defaultVisible": true },
         { "id": "openai/gpt-5.6-luna", "role": "快速", "defaultVisible": true },
         { "id": "openai/gpt-6-astra", "role": "旗舰", "defaultVisible": true },
         { "id": "openai/gpt-6-astra-pro", "role": "旗舰" },
+        { "id": "openai/gpt-6-sol", "role": "旗舰", "defaultVisible": true },
+        { "id": "openai/gpt-6-sol-pro", "role": "旗舰" },
+        { "id": "openai/gpt-6.1-sol", "role": "旗舰", "defaultVisible": true },
+        { "id": "openai/gpt-6.1-sol-pro", "role": "旗舰" },
+        { "id": "openai/gpt-6-luna", "role": "快速", "defaultVisible": true },
+        { "id": "openai/gpt-6-luna-pro", "role": "快速" },
         { "id": "google/gemini-3.1-pro-preview", "role": "旗舰", "defaultVisible": true },
         { "id": "google/gemini-3.8-flash", "role": "快速", "defaultVisible": true },
         { "id": "google/gemini-3.7-flash", "role": "快速", "defaultVisible": true },
@@ -51,7 +60,10 @@
         { "id": "gpt-5.6-sol", "role": "旗舰", "defaultVisible": true },
         { "id": "gpt-5.6-terra", "role": "日常", "defaultVisible": true },
         { "id": "gpt-5.6-luna", "role": "快速", "defaultVisible": true },
-        { "id": "gpt-6-astra", "role": "旗舰", "defaultVisible": true }
+        { "id": "gpt-6-astra", "role": "旗舰", "defaultVisible": true },
+        { "id": "gpt-6-sol", "role": "旗舰", "defaultVisible": true },
+        { "id": "gpt-6.1-sol", "role": "旗舰", "defaultVisible": true },
+        { "id": "gpt-6-luna", "role": "快速", "defaultVisible": true }
       ]
     },
     "anthropic": {
@@ -61,8 +73,11 @@
         { "id": "claude-fable-5", "role": "旗舰", "defaultVisible": true },
         { "id": "claude-fable-5-1", "role": "旗舰", "defaultVisible": true },
         { "id": "claude-opus-5", "role": "旗舰" },
+        { "id": "claude-opus-5-5", "role": "旗舰", "defaultVisible": true },
         { "id": "claude-sonnet-5", "role": "日常", "defaultVisible": true },
-        { "id": "claude-haiku-4-5", "role": "快速", "defaultVisible": true }
+        { "id": "claude-sonnet-5-5", "role": "日常", "defaultVisible": true },
+        { "id": "claude-haiku-4-5", "role": "快速", "defaultVisible": true },
+        { "id": "claude-haiku-5-5", "role": "快速", "defaultVisible": true }
       ]
     },
     "google": {
@@ -82,13 +97,48 @@
         { "id": "kimi-k2.6", "role": "快速", "defaultVisible": true, "reasoningOff": "thinking_disabled" }
       ]
     },
+    "kimi-coding-plan": {
+      "label": "Kimi For Coding（国内）",
+      "strategy": "curated",
+      "models": [
+        { "id": "kimi-k3[1m]", "role": "旗舰", "defaultVisible": true },
+        { "id": "kimi-k2.7-code", "role": "快速", "defaultVisible": true },
+        { "id": "kimi-k2.6", "role": "快速", "defaultVisible": true }
+      ]
+    },
+    "kimi-coding-plan-global": {
+      "label": "Kimi For Coding（国际）",
+      "strategy": "curated",
+      "models": [
+        { "id": "kimi-k3[1m]", "role": "旗舰", "defaultVisible": true },
+        { "id": "kimi-k2.7-code", "role": "快速", "defaultVisible": true },
+        { "id": "kimi-k2.6", "role": "快速", "defaultVisible": true }
+      ]
+    },
     "zhipu": {
       "label": "智谱 AI",
       "strategy": "curated",
       "models": [
         { "id": "glm-5.3", "role": "旗舰", "defaultVisible": true, "reasoningOff": "thinking_disabled" },
         { "id": "glm-5.3-flash", "role": "快速", "defaultVisible": true, "reasoningOff": "thinking_disabled" },
+        { "id": "glm-5.3-flashx", "role": "快速", "defaultVisible": true, "reasoningOff": "thinking_disabled" },
         { "id": "glm-5.2", "role": "日常", "defaultVisible": true, "reasoningOff": "thinking_disabled" }
+      ]
+    },
+    "zhipu-coding-plan": {
+      "label": "智谱 GLM Coding Plan（国内）",
+      "strategy": "curated",
+      "models": [
+        { "id": "glm-5.3[1m]", "role": "旗舰", "defaultVisible": true },
+        { "id": "glm-5.3-flash[1m]", "role": "快速", "defaultVisible": true }
+      ]
+    },
+    "zai-coding-plan": {
+      "label": "Z.ai GLM Coding Plan（国际）",
+      "strategy": "curated",
+      "models": [
+        { "id": "glm-5.3[1m]", "role": "旗舰", "defaultVisible": true },
+        { "id": "glm-5.3-flash[1m]", "role": "快速", "defaultVisible": true }
       ]
     },
     "minimax": {
@@ -96,6 +146,22 @@
       "strategy": "curated",
       "models": [
         { "id": "MiniMax-M3", "role": "旗舰", "defaultVisible": true }
+      ]
+    },
+    "minimax-coding-plan": {
+      "label": "MiniMax Coding Plan（国内）",
+      "strategy": "curated",
+      "models": [
+        { "id": "MiniMax-M3[1m]", "role": "旗舰", "defaultVisible": true },
+        { "id": "MiniMax-M2.7", "role": "快速", "defaultVisible": true }
+      ]
+    },
+    "minimax-coding-plan-global": {
+      "label": "MiniMax Coding Plan（国际）",
+      "strategy": "curated",
+      "models": [
+        { "id": "MiniMax-M3[1m]", "role": "旗舰", "defaultVisible": true },
+        { "id": "MiniMax-M2.7", "role": "快速", "defaultVisible": true }
       ]
     }
   }
